@@ -1,0 +1,252 @@
+import { PortfolioPayload } from "@/types/database";
+
+/**
+ * High-fidelity, professional sample profile dataset.
+ * Used for demo routes, landing page scaled live previews,
+ * and onboarding default previews.
+ */
+export const DEMO_PORTFOLIO_DATA: PortfolioPayload = {
+  profile: {
+    id: "demo-alex-vance",
+    user_id: "demo-user-1",
+    username: "alex-vance",
+    full_name: "Alex Vance",
+    professional_title: "Staff Design Technologist & Systems Architect",
+    headline: "Bridging the chasm between cinematic digital experiences and resilient distributed systems.",
+    short_bio: "Staff Design Technologist with 9+ years architecting design systems, WebGL rendering canvases, and real-time collaboration engines at scale.",
+    about_me:
+      "I operate at the intersection where visual craftsmanship meets robust distributed architecture. Over the last decade, I have led design infrastructure across high-velocity teams—standardizing tokens across Web, iOS, and Android for 1,200+ engineers, optimizing interactive canvas rendering down to 16ms frame budgets, and championing uncompromising digital accessibility.\n\nMy methodology couples deep empathy for end users with technical rigor: every animation curve is physically grounded, every API endpoint is idempotent and typed, and every layout reflows gracefully from 360px smartphones to 4K studio displays.",
+    avatar_url:
+      "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=85",
+    email_public: "alex.vance@folionova.io",
+    phone_public: "+1 (415) 890-4421",
+    location: "San Francisco, California",
+    website: "https://folionova.io/u/alex-vance",
+    open_to_work: true,
+    years_of_experience: 9,
+    languages: ["English (Native)", "German (Fluent)", "Urdu (Conversational)"],
+    is_published: true,
+    design_id: "aurora",
+    cv_template_id: "executive",
+    theme_mode: "dark",
+    accent_color: "#6366F1",
+    font_style: "inter",
+    show_email: true,
+    show_phone: false,
+    seo_title: "Alex Vance — Staff Design Technologist & Systems Architect",
+    seo_description:
+      "Selected works, design systems architecture, and engineering trajectory of Alex Vance.",
+    view_count: 14820,
+    created_at: new Date().toISOString(),
+    updated_at: new Date().toISOString(),
+  },
+  social_links: [
+    {
+      id: "demo-sl-1",
+      profile_id: "demo-alex-vance",
+      platform: "github",
+      url: "https://github.com",
+      sort_order: 0,
+    },
+    {
+      id: "demo-sl-2",
+      profile_id: "demo-alex-vance",
+      platform: "linkedin",
+      url: "https://linkedin.com",
+      sort_order: 1,
+    },
+    {
+      id: "demo-sl-3",
+      profile_id: "demo-alex-vance",
+      platform: "x",
+      url: "https://x.com",
+      sort_order: 2,
+    },
+    {
+      id: "demo-sl-4",
+      profile_id: "demo-alex-vance",
+      platform: "website",
+      url: "https://folionova.io",
+      sort_order: 3,
+    },
+  ],
+  skills: [
+    { id: "s-1", profile_id: "demo-alex-vance", name: "Design Systems", level: 5, category: "Design", sort_order: 0 },
+    { id: "s-2", profile_id: "demo-alex-vance", name: "TypeScript", level: 5, category: "Engineering", sort_order: 1 },
+    { id: "s-3", profile_id: "demo-alex-vance", name: "React 19 & Next.js", level: 5, category: "Engineering", sort_order: 2 },
+    { id: "s-4", profile_id: "demo-alex-vance", name: "WebGL / Three.js", level: 4, category: "Graphics", sort_order: 3 },
+    { id: "s-5", profile_id: "demo-alex-vance", name: "Tailwind CSS v4", level: 5, category: "Design", sort_order: 4 },
+    { id: "s-6", profile_id: "demo-alex-vance", name: "Framer Motion & GSAP", level: 5, category: "Motion", sort_order: 5 },
+    { id: "s-7", profile_id: "demo-alex-vance", name: "PostgreSQL & Supabase", level: 4, category: "Backend", sort_order: 6 },
+    { id: "s-8", profile_id: "demo-alex-vance", name: "Distributed Systems", level: 4, category: "Architecture", sort_order: 7 },
+    { id: "s-9", profile_id: "demo-alex-vance", name: "GraphQL & REST", level: 5, category: "Architecture", sort_order: 8 },
+    { id: "s-10", profile_id: "demo-alex-vance", name: "WCAG 2.1 Accessibility", level: 5, category: "Standards", sort_order: 9 },
+    { id: "s-11", profile_id: "demo-alex-vance", name: "Figma Tokens", level: 5, category: "Design", sort_order: 10 },
+    { id: "s-12", profile_id: "demo-alex-vance", name: "Rust (WASM)", level: 3, category: "Engineering", sort_order: 11 },
+  ],
+  experiences: [
+    {
+      id: "exp-1",
+      profile_id: "demo-alex-vance",
+      company: "Aetherial Labs",
+      role: "Staff Design Technologist",
+      location: "San Francisco, CA (Hybrid)",
+      start_date: "2023",
+      end_date: null,
+      is_current: true,
+      description:
+        "Lead design infrastructure and canvas rendering architecture for an enterprise collaboration suite. Reduced canvas redraw latency by 44% using offscreen WebGL buffers and designed the unified token compiler adopted across web and mobile clients.",
+      sort_order: 0,
+    },
+    {
+      id: "exp-2",
+      profile_id: "demo-alex-vance",
+      company: "Vanguard Digital Studio",
+      role: "Lead Interactive Systems Architect",
+      location: "New York, NY",
+      start_date: "2020",
+      end_date: "2023",
+      is_current: false,
+      description:
+        "Directed a cross-functional engineering and motion design team delivering bespoke web applications for Tier-1 technology companies. Authored open-source micro-animation utilities with over 2M monthly downloads.",
+      sort_order: 1,
+    },
+    {
+      id: "exp-3",
+      profile_id: "demo-alex-vance",
+      company: "Hyperion Interactive",
+      role: "Senior Frontend Engineer",
+      location: "Seattle, WA",
+      start_date: "2017",
+      end_date: "2020",
+      is_current: false,
+      description:
+        "Spearheaded component library migration to modern React architecture. Established automated visual regression pipelines preventing layout shifts across 80+ enterprise consumer surfaces.",
+      sort_order: 2,
+    },
+  ],
+  education: [
+    {
+      id: "edu-1",
+      profile_id: "demo-alex-vance",
+      institution: "Stanford University",
+      degree: "B.S. in Computer Science",
+      field: "Human-Computer Interaction",
+      start_year: "2013",
+      end_year: "2017",
+      grade: "3.9 GPA • Departmental Honors",
+      description: "Focus on interactive computer graphics, typography mathematics, and distributed databases.",
+      sort_order: 0,
+    },
+    {
+      id: "edu-2",
+      profile_id: "demo-alex-vance",
+      institution: "Rhode Island School of Design (RISD)",
+      degree: "Executive Certificate",
+      field: "Advanced Typographic Systems",
+      start_year: "2019",
+      end_year: "2019",
+      grade: null,
+      description: "Intensive focus on micro-typography, optical sizes, and expressive grid systems.",
+      sort_order: 1,
+    },
+  ],
+  projects: [
+    {
+      id: "proj-1",
+      profile_id: "demo-alex-vance",
+      title: "ChromaFlow Engine",
+      description:
+        "High-performance GPU shader pipeline for real-time fluid dynamic backgrounds. Achieves zero frame drops at 120Hz while maintaining WCAG AA contrast compliance across arbitrary palettes.",
+      tech_stack: ["WebGL", "GLSL", "TypeScript", "Tailwind CSS"],
+      live_url: "https://chromaflow.example.com",
+      repo_url: "https://github.com/example/chromaflow",
+      image_url:
+        "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=800&q=80",
+      featured: true,
+      sort_order: 0,
+    },
+    {
+      id: "proj-2",
+      profile_id: "demo-alex-vance",
+      title: "OmniToken Design Infrastructure",
+      description:
+        "Cross-platform design token compiler that translates Figma variables into production Swift, Kotlin, and CSS variables in sub-second CI pipelines with semantic versioning.",
+      tech_stack: ["TypeScript", "Node.js", "AST", "Figma API"],
+      live_url: "https://omnitoken.example.com",
+      repo_url: "https://github.com/example/omnitoken",
+      image_url:
+        "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80",
+      featured: true,
+      sort_order: 1,
+    },
+    {
+      id: "proj-3",
+      profile_id: "demo-alex-vance",
+      title: "Synapse Collaborative Canvas",
+      description:
+        "Multiplayer spatial canvas with CRDT-based state reconciliation, WebRTC data channels, and sub-10ms cursor synchronization for remote system diagramming.",
+      tech_stack: ["React 19", "WebSockets", "CRDTs", "Canvas API"],
+      live_url: "https://synapse-canvas.example.com",
+      repo_url: "https://github.com/example/synapse",
+      image_url:
+        "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=800&q=80",
+      featured: true,
+      sort_order: 2,
+    },
+    {
+      id: "proj-4",
+      profile_id: "demo-alex-vance",
+      title: "HyperScale UI Benchmark Suite",
+      description:
+        "Automated benchmarking harness for measuring DOM re-render times, layout thrashing, and memory leakage across modern frontend frameworks.",
+      tech_stack: ["Playwright", "Web Vitals", "Next.js", "Turbopack"],
+      live_url: "https://hyperscale-benchmark.example.com",
+      repo_url: "https://github.com/example/hyperscale-ui",
+      image_url:
+        "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80",
+      featured: false,
+      sort_order: 3,
+    },
+  ],
+  certifications: [
+    {
+      id: "cert-1",
+      profile_id: "demo-alex-vance",
+      name: "AWS Certified Solutions Architect — Professional",
+      issuer: "Amazon Web Services",
+      year: "2024",
+      url: "https://aws.amazon.com",
+      sort_order: 0,
+    },
+    {
+      id: "cert-2",
+      profile_id: "demo-alex-vance",
+      name: "Certified Interaction Design Specialist",
+      issuer: "Nielsen Norman Group",
+      year: "2022",
+      url: "https://nngroup.com",
+      sort_order: 1,
+    },
+  ],
+  testimonials: [
+    {
+      id: "test-1",
+      profile_id: "demo-alex-vance",
+      author: "Elena Rostova",
+      role: "VP of Product Design, Linear Dynamics",
+      quote:
+        "Alex operates at a level of craft and architectural foresight that is exceptionally rare. He delivered our design system ahead of schedule and transformed our team's engineering velocity.",
+      sort_order: 0,
+    },
+    {
+      id: "test-2",
+      profile_id: "demo-alex-vance",
+      author: "Marcus Chen",
+      role: "Distinguished Engineer, Hyperion Core",
+      quote:
+        "An engineer who understands typography and motion down to the pixel, paired with the backend muscle to build scalable infrastructure. Alex elevated our entire frontend culture.",
+      sort_order: 1,
+    },
+  ],
+};
